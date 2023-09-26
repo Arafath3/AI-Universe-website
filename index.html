@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Universe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/da7e454d4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-4xl font-semibold text-center my-12">AI Universe Hub</h1>
+      <!-- todo: Sort by date button here -->
+      <div class="text-center">
+        <button
+          class="btn bg-[#EB5757] text-white text-xl font-semibold px-7 rounded-2xl"
+          id="sort-by-date-btn"
+        >
+          Sort By Date
+        </button>
+      </div>
+      <section class="container mx-auto mt-16">
+        <!-- AI Card section starts here -->
+        <div
+          id="AI-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- ! this section contains all the cards and all the html was done in JS -->
+        </div>
+      </section>
+    </main>
+    <script src="/JS/AI.js"></script>
+  </body>
+</html>
