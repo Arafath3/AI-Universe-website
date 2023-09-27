@@ -40,12 +40,44 @@
         </button>
       </div>
       <section class="container mx-auto mt-16">
+        <!-- You can open the modal using ID.showModal() method -->
+        <dialog id="my_modal_3" class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <form method="dialog">
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-5 top-3"
+              >
+                ✕
+              </button>
+            </form>
+            <div class="modal-action">
+              <!-- !all the details in this section -->
+              <div class="flex justify-evenly items-center gap-5 p-32">
+                <!-- text contain -->
+                <div
+                  id="modal-text-container"
+                  class="border border-[#EB5757] p-8"
+                ></div>
+                <!-- image contain -->
+                <div id="modal-img-container"></div>
+              </div>
+            </div>
+          </div>
+        </dialog>
         <!-- AI Card section starts here -->
         <div
           id="AI-container"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <!-- ! this section contains all the cards and all the html was done in JS -->
+        </div>
+        <!-- ? see more button here -->
+        <div id="see-more" class="text-center my-12">
+          <button
+            class="btn bg-[#EB5757] text-white text-xl font-semibold px-7 rounded-2xl"
+          >
+            See More
+          </button>
         </div>
       </section>
     </main>
